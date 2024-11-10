@@ -1,5 +1,6 @@
 package com.example.demo.entity.impl;
 
+import com.example.demo.entity.FuelType;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,8 @@ public class VehicleEntity {
     private String licensePlateNumber;
     private String vehicleCategory;
     private String status;
+    private FuelType fuelType;
+
 
     @OneToOne
     @JoinColumn(name = "allocatedStaffMemberDetail")
