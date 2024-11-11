@@ -4,10 +4,16 @@ package com.example.demo.entity.impl;
 import com.example.demo.entity.Gender;
 import com.example.demo.entity.Role;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "staff")
 public class StaffEntity {

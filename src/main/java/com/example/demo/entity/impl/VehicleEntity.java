@@ -2,9 +2,15 @@ package com.example.demo.entity.impl;
 
 import com.example.demo.entity.FuelType;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
-@Table(name = "vahicle")
+@Table(name = "vehicle")
 public class VehicleEntity {
     @Id
     private String vehicleCode;

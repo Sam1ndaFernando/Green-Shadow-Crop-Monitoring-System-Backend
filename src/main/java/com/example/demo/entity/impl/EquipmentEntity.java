@@ -4,7 +4,13 @@ package com.example.demo.entity.impl;
 import com.example.demo.entity.EquipmentStatus;
 import com.example.demo.entity.EquipmentType;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "equipment")
 public class EquipmentEntity {

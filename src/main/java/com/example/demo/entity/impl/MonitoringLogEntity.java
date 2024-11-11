@@ -1,9 +1,15 @@
 package com.example.demo.entity.impl;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.List;
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "monitoringLogServices")
 public class MonitoringLogEntity {
